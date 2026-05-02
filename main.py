@@ -2170,15 +2170,15 @@ CSV_FILE = f"{BASE_DIR}/latest_strawberrynet.csv"
 os.makedirs(BASE_DIR, exist_ok=True)
 
 CATEGORIES: list[tuple[str, str]] = [
-    ("skincare",      "https://www.strawberrynet.com/en/skincare?sort=6"),
-    ("makeup",        "https://www.strawberrynet.com/en/makeup?sort=6"),
-    ("haircare",      "https://www.strawberrynet.com/en/haircare?sort=6"),
-    ("perfume",       "https://www.strawberrynet.com/en/perfume?sort=6"),
-    ("mens-skincare", "https://www.strawberrynet.com/en/mens-skincare?sort=6"),
-    ("cologne",       "https://www.strawberrynet.com/en/cologne?sort=6"),
-    ("home-scents",   "https://www.strawberrynet.com/en/home-scents?sort=6"),
+    # ("skincare",      "https://www.strawberrynet.com/en/skincare?sort=6"),
+    # ("makeup",        "https://www.strawberrynet.com/en/makeup?sort=6"),
+    # ("haircare",      "https://www.strawberrynet.com/en/haircare?sort=6"),
+    # ("perfume",       "https://www.strawberrynet.com/en/perfume?sort=6"),
+    # ("mens-skincare", "https://www.strawberrynet.com/en/mens-skincare?sort=6"),
+    # ("cologne",       "https://www.strawberrynet.com/en/cologne?sort=6"),
+    # ("home-scents",   "https://www.strawberrynet.com/en/home-scents?sort=6"),
     ("health",        "https://www.strawberrynet.com/en/health?sort=6"),
-    ("storeberry",    "https://www.strawberrynet.com/en/storeberry?sort=6"),
+    # ("storeberry",    "https://www.strawberrynet.com/en/storeberry?sort=6"),
 ]
 
 QTY_URL             = "https://affiliate.strawberrynet.com/affiliate/cgi/QTYResponse.asp?ProdId={}"
@@ -2189,7 +2189,7 @@ IMAGE_WAIT_TIMEOUT  = 8_000    # ms – wait for real img srcs
 MAX_PAGE_RETRIES    = 3
 QTY_CONCURRENCY     = 25       # parallel quantity requests
 QTY_TIMEOUT         = 12       # seconds per quantity request
-REFRESH_INTERVAL_H  = 3        # hours between automatic refreshes
+REFRESH_INTERVAL_H  = 24        # hours between automatic refreshes
 
 CDN_HOST            = "a.cdnsbn.com"
 CDN_PATH            = "/images/products/"
